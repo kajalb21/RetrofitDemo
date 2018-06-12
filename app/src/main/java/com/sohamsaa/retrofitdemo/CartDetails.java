@@ -15,7 +15,8 @@ class AllDetails {
 }
 
 class ChildItems {
-    private String Amount;
+    @SerializedName("Amount")
+    private String sAmount;
     private String ImgUrl;
     private String ItemNo;
     private int ProductID;
@@ -23,7 +24,7 @@ class ChildItems {
     private int Quantity;
 
     public String getAmount() {
-        return Amount;
+        return sAmount;
     }
 
     public String getImgUrl() {
